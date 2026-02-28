@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PERBOYRE CASTELO - Check-in</title>
+
+<!-- Conecte ao arquivo CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+       
+<body>
+    <div class="top-bar">
+        <img src="imagens/logo.png" class="top-bar-logo" alt="Logo">
+        <div class="top-bar-text">
+            <span class="top-bar-title">Perboyre Castelo Radiologia</span>
+            <span class="top-bar-subtitle">A imagem da Odontologia <strong>do Ceará</strong></span>
+        </div>
+    </div>
+
+<div class="container">
+    <img src="imagens/ticket.png" class="ticket-icon" alt="Ticket">
+    <h1>Bem-Vindo à Perboyre Castelo</h1>
+    <h2>Check-in do Paciente</h2>
+
+    <input id="nameInput" type="text" placeholder="Digite seu nome">
+    
+    <div class="priority-buttons">
+        <button id="normalBtn" class="priority-btn normal-btn">Normal</button>
+        <button id="priorityBtn" class="priority-btn priority-btn-style">Prioridade</button>
+    </div>
+
+    <div class="ticket" id="ticket">
+        <p>Senha gerada:</p>
+        <div class="ticket-number" id="ticketNumber"></div>
+        <p>Aguarde sua senha no Painel</p>
+        <button id="printBtn" class="print-btn">Imprimir Senha</button>
+    </div>
+</div>
+
+<!-- Conecte ao arquivo JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>

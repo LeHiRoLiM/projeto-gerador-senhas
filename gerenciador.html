@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador - Perboyre Castelo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <img src="imagens/logo.png" class="top-bar-logo" alt="Logo">
+    <div class="top-bar-text">
+      <span class="top-bar-title">Perboyre Castelo</span>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Painel de Senhas</h1>
+
+    <div class="controls">
+      <button  id="nextBtn" class="next-btn">Chamar próxima senha</button>
+    </div>
+
+    <div class="current-block">
+      <strong><br>Senha atual:</strong>
+      <div id="currentCalled" class="current-called">—</div>
+    </div>
+
+    <div class="queue-block">
+      <strong>Fila de espera (<span id="queueCount">0</span>):</strong>
+      <ul id="queueList" class="queue-list"></ul>
+    </div>
+  </div>
+
+  <script src="gerenciador.js"></script>
+</body>
+</html>

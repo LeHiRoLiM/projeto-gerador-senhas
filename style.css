@@ -1,0 +1,281 @@
+.barraSuperior{
+	height: 5000px;
+	margin-top: 40px;
+}
+
+.top-bar {
+    background: #861d06;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.top-bar-logo {
+    max-width: 160px;
+    height: auto;
+}
+
+.top-bar-text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: right;
+}
+
+.top-bar-title {
+    display: block;
+    font-size: 24pt;
+    font-weight: bold;
+    color: white;
+    line-height: 1.1;
+}
+
+.top-bar-subtitle {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.uespiLogo{
+	max-width: 200px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f2f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 180px;
+}
+
+.container {
+    background: white;
+    width: 500px;
+    padding: 60px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-top: 0;
+}
+
+/* Gerenciador spacing */
+.controls {
+    margin-top: 32px; /* distância entre título e botão */
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #040404;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.ticket-icon {
+    max-width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #473f3e;
+    font-size: 16px;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+input {
+    width: 93%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.priority-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.priority-btn {
+    flex: 1;
+    padding: 12px;
+    background: #f0f0f0;
+    color: #333;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.normal-btn {
+    background: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.normal-btn:hover {
+    background: #45a049;
+    border-color: #45a049;
+}
+
+.normal-btn:active {
+    background: #f5f5f5;
+    color: black;
+    border-color: #f44336;
+}
+
+.priority-btn-style {
+    background: #f44336;
+    color: white;
+    border-color: #f44336;
+}
+
+.priority-btn-style:hover {
+    background: #da190b;
+    border-color: #da190b;
+}
+
+.priority-btn-style:active {
+    background: #f5f5f5;
+    color: black;
+    border-color: #f44336;
+}
+
+.priority-btn:hover {
+    border-color: #861d06;
+    color: black;
+    background: #f9f9f9;
+}
+
+.priority-btn.active {
+    color: rgb(63, 62, 62);
+    border-color: #bb381e;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #861d06;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #861d06;
+}
+
+.ticket {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f3e6ea;
+    display: none;
+}
+
+.ticket-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #861d06;
+}
+
+.print-btn {
+    width: 100%;
+    padding: 12px;
+    background: #837474;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.print-btn:hover {
+    background: #b61c24;
+}
+
+/* Queue cards for gerenciador.html */
+.queue-block {
+    margin-top: 20px;
+}
+
+.queue-list {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+}
+
+.queue-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    padding: 12px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    min-height: 74px;
+}
+
+.queue-card .card-type {
+    width: 46px;
+    height: 46px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+}
+
+.queue-card.priority .card-type { background: #f44336; }
+.queue-card.normal .card-type { background: #4caf50; }
+
+.queue-card .card-body {
+    flex: 1;
+    text-align: left;
+}
+
+.card-number {
+    font-size: 20px;
+    font-weight: 800;
+    color: #861d06;
+}
+
+.card-name {
+    font-size: 14px;
+    color: #333;
+    margin-top: 4px;
+}
+
+.card-time {
+    font-size: 12px;
+    color: #777;
+    margin-top: 6px;
+}
